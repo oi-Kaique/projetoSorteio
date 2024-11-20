@@ -824,6 +824,10 @@ select {
   margin-top: 1.25rem;
 }
 
+.block {
+  display: block;
+}
+
 .flex {
   display: flex;
 }
@@ -872,10 +876,6 @@ select {
   flex: 1 1 0%;
 }
 
-.basis-1\/2 {
-  flex-basis: 50%;
-}
-
 .cursor-pointer {
   cursor: pointer;
 }
@@ -886,6 +886,10 @@ select {
 
 .flex-col {
   flex-direction: column;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
 }
 
 .items-center {
@@ -944,6 +948,10 @@ select {
   border-width: 1px;
 }
 
+.border-2 {
+  border-width: 2px;
+}
+
 .border-none {
   border-style: none;
 }
@@ -963,6 +971,11 @@ select {
   background-color: rgb(36 34 46 / var(--tw-bg-opacity, 1));
 }
 
+.bg-black {
+  --tw-bg-opacity: 1;
+  background-color: rgb(0 0 0 / var(--tw-bg-opacity, 1));
+}
+
 .bg-gray-200 {
   --tw-bg-opacity: 1;
   background-color: rgb(229 231 235 / var(--tw-bg-opacity, 1));
@@ -972,9 +985,9 @@ select {
   background-color: transparent;
 }
 
-.bg-black {
+.bg-\[rgb\(197\2c 141\2c 231\)\] {
   --tw-bg-opacity: 1;
-  background-color: rgb(0 0 0 / var(--tw-bg-opacity, 1));
+  background-color: rgb(197 141 231 / var(--tw-bg-opacity, 1));
 }
 
 .bg-shape {
@@ -1007,13 +1020,47 @@ select {
   padding-right: 2.25rem;
 }
 
+.px-\[30px\] {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
 .py-1 {
   padding-top: 0.25rem;
   padding-bottom: 0.25rem;
 }
 
+.py-3 {
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+}
+
+.py-2 {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.py-\[10px\] {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.px-\[20px\] {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.px-\[10px\] {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
 .pt-12 {
   padding-top: 3rem;
+}
+
+.pb-2 {
+  padding-bottom: 0.5rem;
 }
 
 .text-center {
@@ -1034,6 +1081,10 @@ select {
 
 .font-sora {
   font-family: "Sora", serif;
+}
+
+.font-roboto {
+  font-family: "Roboto", sans-serif;
 }
 
 .text-3xl {
@@ -1133,6 +1184,11 @@ select {
   color: rgb(217 217 217 / var(--tw-text-opacity, 1));
 }
 
+.text-\[rgb\(197\2c 141\2c 231\)\] {
+  --tw-text-opacity: 1;
+  color: rgb(197 141 231 / var(--tw-text-opacity, 1));
+}
+
 .text-cyan-400 {
   --tw-text-opacity: 1;
   color: rgb(34 211 238 / var(--tw-text-opacity, 1));
@@ -1146,25 +1202,6 @@ select {
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity, 1));
-}
-
-.text-blue-800 {
-  --tw-text-opacity: 1;
-  color: rgb(30 64 175 / var(--tw-text-opacity, 1));
-}
-
-.text-blue-500 {
-  --tw-text-opacity: 1;
-  color: rgb(59 130 246 / var(--tw-text-opacity, 1));
-}
-
-.text-\[\] {
-  color: ;
-}
-
-.text-\[rgb\(197\2c 141\2c 231\)\] {
-  --tw-text-opacity: 1;
-  color: rgb(197 141 231 / var(--tw-text-opacity, 1));
 }
 
 .underline {

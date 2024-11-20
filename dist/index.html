@@ -89,22 +89,32 @@
 
         <div class="mt-5">
           <label class="inline-flex items-center cursor-pointer space-x-1">
-            <input type="checkbox" data-js="repeat_numbers" value="" class="sr-only peer" />
+            <input type="checkbox" data-js="repeat_numbers" class="sr-only peer" />
 
             <div
               class="relative w-9 h-5 bg-gray-200 peer-focus:outline-none rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:start-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-4 after:w-4 after:transition-all dark:border-gray-600 peer-checked:bg-gradient-to-r peer-checked:from-[#d586e0] peer-checked:to-[#91a1fa]">
             </div>
 
-            <span class="text-white text-xs font-normal font-['Inter'] leading-[18px]">Não repetir número</span>
+            <span class="text-white text-xs font-normal font-mono leading-[18px]">Não repetir número</span>
           </label>
         </div>
 
         <div class="h-14 p-4 bg-[#24222e] rounded-lg justify-center items-center gap-2 inline-flex mt-10 w-full">
           <button data-js="btn_raffle"
-            class="text-center text-white text-base font-bold font-['Roboto Flex'] uppercase leading-normal flex gap-1">
-            Sortear <img src="/componts/Frame (1).svg" alt="Seta" />
+            class="text-center text-white text-base font-bold font-roboto-mono uppercase leading-normal flex gap-1">
+            Sortear
+            <img src="/componts/Frame (1).svg" alt="Seta" />
           </button>
         </div>
+      </div>
+      <div data-js="raffle_result" class="flex flex-col gap-4 text-center items-center" style="display: none;">
+        <h3 class=" text-white text-xl font-bold font-roboto-mono uppercase leading-[30px]">RESULTADO DO SORTEIO</h3>
+        <span data-js="times_drawn" class=" text-[#c7c9cc] text-base font-bold font-roboto-mono uppercase leading-normal">1º RESULTADO</span>
+        <div data-js="drawn_numbres"></div>
+        <button type="button" data-js="draw_again_button" class="h-14 p-4 bg-[#24222e] rounded-lg border-2 justify-center items-center gap-2 inline-flex border-none">
+          <span class="text-center text-[#d9d9d9] text-base font-bold font-roboto-mono uppercase leading-normal">SORTEAR NOVAMENTE</span>
+          <img src="/componts/Frame (3).svg" alt="reverse">
+        </button>
       </div>
     </div>
 
@@ -138,6 +148,7 @@
   </section>
 
   <script src="./app.js"></script>
+
 </body>
 
 </html>
