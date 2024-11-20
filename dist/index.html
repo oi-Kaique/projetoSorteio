@@ -1,0 +1,143 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@700&display=swap" rel="stylesheet">
+
+  <link href="./styles.css" rel="stylesheet">
+  <link rel="icon" href="./favicon.png" type="image/png">
+</head>
+
+<body class="bg-shape bg-black bg-no-repeat bg-bottom bg-cover min-h-screen flex flex-col ">
+
+  <header class="flex justify-center items-center mt-12 gap-3 max-w-[1400px] w-full mx-auto lg:justify-start">
+    <img src="/componts/Clip path group.svg" alt="florence" />
+
+    <h1 class="text-white font-sora text-3xl font-bold uppercase">
+      NUMBERS
+    </h1>
+  </header>
+
+  <section
+    class="px-9 max-w-[1400px] w-full mx-auto grid grid-rows-3 gap-4 lg:grid-rows-2 lg:grid-cols-2 lg:px-0 flex-1">
+    <div class="pt-12 flex flex-col justify-end lg:py-12">
+      <span class="text-[#c7c9cc] text-base font-bold font-roboto-mono uppercase leading-normal">
+        ONLINE - GRATUITO
+      </span>
+      <h2 class="text-white text-[40px] lg:text-7xl font-extrabold font-sora uppercase leading-[52px]">
+        SORTEADOR DE NÚMEROS
+      </h2>
+    </div>
+
+    <div class="row-span-2 flex flex-col justify-center">
+      <div data-js="raffle_form">
+        <div>
+          <h3 class="text-white text-xl font-bold font-roboto-mono uppercase leading-[30px]">
+            QUERO SORTEAR:
+          </h3>
+          <p class="text-[#d9d9d9] text-sm font-medium font-['Roboto Flex'] leading-[21px]">
+            Defina o intervalo e a quantidade de números, clique em "Sortear" e
+            veja os resultados na tela. É rápido e fácil!
+          </p>
+          <ul class="flex gap-5 w-64 text-white mt-10">
+            <li
+              class="flex flex-col items-center text-[#c7c8cc] text-base font-bold font-mono uppercase leading-normal">
+              <span>NÚMEROS</span>
+
+              <div
+                class="w-full min-w-[80px] h-14 px-2 py-1 bg-[#111012] rounded-lg border border-[#111012] flex-col justify-center items-center gap-1 inline-flex">
+                <div data-js="qtd_numbers"
+                  class="text-center bg-transparent border-none focus:ring-0 w-full [appearance:textfield] [&::-webkit-outer-spin-button]:appearance-none [&::-webkit-inner-spin-button]:appearance-none text-white text-[32px] font-bold font-sora uppercase leading-[48px]"
+                  contenteditable="true" role="textbox" aria-placeholder="2"> 2
+                </div>
+              </div>
+            </li>
+            <li
+              class="flex flex-col items-center text-[#c7c8cc] text-base font-bold font-mono uppercase leading-normal">
+              <span>DE</span>
+
+              <div
+                class="w-full min-w-[80px] h-14 px-2 py-1 bg-[#111012] rounded-lg border border-[#111012] flex-col justify-center items-center gap-1 inline-flex">
+                <div data-js="initial_value"
+                  class="text-center bg-transparent w-full border-none focus:ring-0 [appearance:textfield] [&::-webkit-outer-spin-button]:appearance-none [&::-webkit-inner-spin-button]:appearance-none  text-white text-[32px] font-bold font-sora uppercase leading-[48px]"
+                  contenteditable="true" role="textbox" aria-placeholder="1"> 1
+                </div>
+              </div>
+            </li>
+
+            <li
+              class="flex flex-col items-center text-[#c7c8cc] text-base font-bold font-mono uppercase leading-normal">
+              <span>DE</span>
+
+              <div
+                class="w-full min-w-[80px] h-14 px-2 py-1 bg-[#111012] rounded-lg border border-[#111012] flex-col justify-center items-center gap-1 inline-flex">
+                <div data-js="end_value"
+                  class="text-center bg-transparent w-full border-none focus:ring-0 [appearance:textfield] [&::-webkit-outer-spin-button]:appearance-none [&::-webkit-inner-spin-button]:appearance-none text-white text-[32px] font-bold font-sora uppercase leading-[48px]"
+                  contenteditable="true" role="textbox" aria-placeholder="100"> 100
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <div class="mt-5">
+          <label class="inline-flex items-center cursor-pointer space-x-1">
+            <input type="checkbox" data-js="repeat_numbers" value="" class="sr-only peer" />
+
+            <div
+              class="relative w-9 h-5 bg-gray-200 peer-focus:outline-none rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:start-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-4 after:w-4 after:transition-all dark:border-gray-600 peer-checked:bg-gradient-to-r peer-checked:from-[#d586e0] peer-checked:to-[#91a1fa]">
+            </div>
+
+            <span class="text-white text-xs font-normal font-['Inter'] leading-[18px]">Não repetir número</span>
+          </label>
+        </div>
+
+        <div class="h-14 p-4 bg-[#24222e] rounded-lg justify-center items-center gap-2 inline-flex mt-10 w-full">
+          <button data-js="btn_raffle"
+            class="text-center text-white text-base font-bold font-['Roboto Flex'] uppercase leading-normal flex gap-1">
+            Sortear <img src="/componts/Frame (1).svg" alt="Seta" />
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="space-y-8">
+      <dl>
+        <dt class="flex gap-1 text-[#c58de7] text-sm font-medium font-roboto-mono leading-[21px]">
+          <img src="/componts/img.svg" alt="florence" />
+
+          Como funciona o sorteador de números?
+        </dt>
+
+        <dd class="text-[#c7c9cc] text-xs font-medium font-roboto-mono leading-[18px] ml-6">
+          O sorteador utiliza um algoritmo de geração aleatória para criar
+          números dentro do intervalo especificado pelo usuário.
+        </dd>
+      </dl>
+
+      <dl>
+        <dt class="flex gap-1 text-[#c58de7] text-sm font-medium font-roboto-mono leading-[21px]">
+          <img src="/componts/img.svg" alt="florence" />
+
+          Posso escolher o intervalo dos números?
+        </dt>
+
+        <dd class="text-[#c7c9cc] text-xs font-medium font-roboto-mono leading-[18px] ml-6">
+          Sim, você pode definir os valores mínimo e máximo para o intervalo
+          dos números sorteados.
+        </dd>
+      </dl>
+    </div>
+  </section>
+
+  <script src="./app.js"></script>
+</body>
+
+</html>
