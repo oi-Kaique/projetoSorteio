@@ -26,10 +26,10 @@ function updateWindow(drawn){
   raffleForm.style.display = "none"
 
   const container = document.createElement("div")
-  container.classList.add("flex")
+  container.classList.add("flex", "items-center", "justify-center", "gap-4", "flex-wrap")
   for (const item of drawn){
     const element = document.createElement("div")
-    element.classList.add("basis-1/2", "text-[rgb(197,141,231)]", "text-center", "text-3xl", "font-bold")
+    element.classList.add("text-[rgb(197,141,231)]","text-3xl", "font-bold", "px-[30px]")
     element.innerText = item
     container.appendChild(element)
   }
